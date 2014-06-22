@@ -9,7 +9,7 @@ Make an edit to this readme file on gh-pages branch. (You can do this directly o
 
 Commit the change.
 
-Go to surbhiraj.github.io/testDeck/index.html
+Go to username.github.io/testDeck/index.html
 And the presentation should be rendered
 
 
