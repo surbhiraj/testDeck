@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test deck</title>
+  <title>Diamond Search Portal</title>
   <meta charset="utf-8">
-  <meta name="description" content="Test deck">
-  <meta name="author" content="">
+  <meta name="description" content="Diamond Search Portal">
+  <meta name="author" content="Surbhi">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
-  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/zenburn.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/rNVD3.css"></link>
+<link rel=stylesheet href="libraries/widgets/morris/css/morris.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
@@ -23,7 +25,17 @@
     src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
   </script>
   
-  
+  <script src="libraries/widgets/highcharts/js/jquery-1.9.1.min.js"></script>
+<script src="libraries/widgets/highcharts/js/highcharts.js"></script>
+<script src="libraries/widgets/highcharts/js/highcharts-more.js"></script>
+<script src="libraries/widgets/highcharts/js/exporting.js"></script>
+<script src="libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="libraries/widgets/nvd3/js/fisheye.js"></script>
+<script src="libraries/widgets/morris/js/raphael-2.1.0.min.js"></script>
+<script src="libraries/widgets/morris/js/morris.min.js"></script>
+
 
 </head>
 <body style="opacity: 0">
@@ -32,9 +44,9 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Test deck</h1>
-    <h2></h2>
-    <p><br/></p>
+    <h1>Diamond Search Portal</h1>
+    <h2>One stop shop for your search</h2>
+    <p>Surbhi<br/>Data Analyst</p>
   </hgroup>
   <article></article>  
 </slide>
@@ -43,14 +55,14 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>What is Diamond Search Portal?</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <p>The <strong>Diamond Search Portal</strong> allows users to gain some insight at some 54,000 round-cut diamonds out there.</p>
+
+<p>The portal allows you to search and analyze data for diamonds based on 4Cs and to compare prices and dimensions with just a few clicks. </p>
+
+<p>You don&#39;t have to trouble yourself with dealing with jewelers and diamond dealers, we have done to the leg work for you!</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -58,14 +70,84 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Who should use Diamond Search Portal?</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">plot(1:10, 1:10)
-</code></pre>
+    <p>Are you a wholesale retailer, a to-be-spouse or just a diamond lover looking to find that perfect rock that matches your budget and your specifications? </p>
 
-<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+<p>If yes,  then <strong>Diamond Search Portal</strong> is for you.</p>
 
+<ul>
+<li><p>You will be able to conduct your search based a number of criteria. </p></li>
+<li><p>You will be able to visualize and analyze the data in numerous ways. </p></li>
+<li><p>You will be able to download the data that you searched for as a .csv file.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Portal Interface - The two panels</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p>Side Panel contains the following filters:  </p>
+
+<ul>
+<li>Price </li>
+<li>Cut </li>
+<li>Color </li>
+<li>Clarity </li>
+<li>Carat</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p>Main Page is divided into the following tabs to allow you to efficiently obtain the information that you desire:  </p>
+
+<ul>
+<li>Table: Provides a listing of the data.<br></li>
+<li>Summary: Provides a high-level summary of the data.<br></li>
+<li>Plot: Allows you to create a scatter plot based on selected X- and Y-variables.<br></li>
+<li>Pie Chart: Beautifully displays information regarding Cut, Color and Clarity of the diamonds and their count.</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Output Examples</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <h3>Plot Example:</h3>
+
+<p><img src="figure/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <h3>Pie Chart Example:</h3>
+
+<iframe src='
+figure/chart1.html
+' scrolling='no' seamless class='rChart 
+highcharts
+ '
+id=iframe-
+chartf0c6ce75a73
+></iframe>
+
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+    
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -76,14 +158,26 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='What is Diamond Search Portal?'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='Who should use Diamond Search Portal?'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Portal Interface - The two panels'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Output Examples'>
+         4
       </a>
     </li>
   </ul>
